@@ -4,10 +4,11 @@ An unofficial plugin that brings OpenHarmony/HarmonyOS's ArkUI design language +
 # Current State
 Implemented the following Widgets:
 
-| HarmonyOS UI Component    | Material UI Component |
-| ------------------------- | --------------------- |
-| HMAbility(Not Functional) | Scaffold              |
-| HMTextButton              | TextButton            |
-| HMElevatedButton          | ElevatedButton        |
-| HMFloatingActionButton    | FloatingActionButton  |
+| HarmonyOS UI Component    | Material UI Component                |
+| ------------------------- | ------------------------------------ |
+| HMAbility(Not Functional) | Scaffold                             |
+| HMTextButton              | TextButton                           |
+| HMElevatedButton          | ElevatedButton                       |
+| HMFloatingActionButton    | FloatingActionButton                 |
+| showHMDilaog              | showDialog(with less customization)  |
 

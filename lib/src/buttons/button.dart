@@ -16,7 +16,7 @@ class HMButton extends StatelessWidget {
     required this.child,
     this.width = 90,
     this.height = 37,
-    this.textColor = Colors.white,
+    this.textColor = const Color.fromARGB(255, 10, 89, 247),
     this.borderRadius = 25,
     this.center = false,
     this.isDanger = false,
@@ -25,8 +25,6 @@ class HMButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: width,
-      height: height,
       child: Material(
         textStyle: TextStyle(
             color: isDanger ? Color.fromARGB(255, 232, 64, 38):textColor,
@@ -37,7 +35,10 @@ class HMButton extends StatelessWidget {
         child: InkWell(
           onTap: () => onPressed(),
           splashColor: Color.fromARGB(0, 255, 94, 94),
-          child: center ? Center(child: child,) : child,
+          child: Padding(
+            padding: const EdgeInsets.all(13.0),
+            child: center ? Center(child: child,) : child,
+          ),
           borderRadius: BorderRadius.circular(borderRadius),
         ),
       ),

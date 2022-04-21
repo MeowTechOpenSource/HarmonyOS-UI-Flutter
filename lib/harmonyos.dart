@@ -3,3 +3,7 @@ export 'package:harmonyos/src/buttons/button.dart';
 export 'package:harmonyos/src/buttons/elevatedbutton.dart';
 export 'package:harmonyos/src/buttons/floatingactionbutton.dart';
 export 'package:harmonyos/src/buttons/textbutton.dart';
+export 'package:harmonyos/src/buttons/iconbutton.dart';
+export 'package:harmonyos/src/hmability/ability.dart';
+export 'package:harmonyos/src/dialog/dialog.dart';
+export 'package:harmonyos/src/textinput/textinput.dart';

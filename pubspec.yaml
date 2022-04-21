@@ -1,7 +1,7 @@
 name: harmonyos
-description: An unofficial plugin that brings OpenHarmony/HarmonyOS's ArkUI design language + names to flutter. We aim to provide an almost pixel-perfect clone of it's ui. It is one of the first, if not the first plugin that enables the HarmonyOS Look.This themes DOES NOT provide you with Harmony Sans!
-version: 0.0.1
-homepage:
+description: Bringing the beautiful HarmonyOS/EMUI 12 look to flutter, experience the best of both worlds!
+version: 0.1.0
+repository: https://github.com/MeowTechOpenSource/HarmonyOS-UI-Flutter
 
 environment:
   sdk: ">=2.16.2 <3.0.0"
@@ -10,6 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  sprung: ^3.0.0
 
 dev_dependencies:
   flutter_test:

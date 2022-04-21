@@ -15,16 +15,14 @@ class HMTextButton extends StatelessWidget {
     required this.child,
     this.width = 90,
     this.height = 37,
-    this.textColor = Colors.black,
+    this.textColor = const Color.fromARGB(255, 10, 89, 247),
     this.borderRadius = 25,
-    this.center = false,
+    this.center = true,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: width,
-      height: height,
       child: Material(
         textStyle: TextStyle(
             color: textColor,
@@ -35,7 +33,10 @@ class HMTextButton extends StatelessWidget {
         child: InkWell(
           onTap: () => onPressed(),
           splashColor: Color.fromARGB(0, 255, 94, 94),
-          child: center ? Center(child: child,) : child,
+          child: Padding(
+            padding: const EdgeInsets.all(13),
+            child: center ? Center(child: child,) : child,
+          ),
           borderRadius: BorderRadius.circular(borderRadius),
         ),
       ),

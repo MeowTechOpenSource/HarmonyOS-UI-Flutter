@@ -39,8 +39,8 @@ class _HMFloatingActionButtonState extends State<HMFloatingActionButton>
 
   @override
   Widget build(BuildContext context) {
-    _scale = 1 - _controller.value;
-    var _scale2 = 1.1 + _controller.value;
+    _scale = 1.2 - _controller.value;
+    var _scale2 = 1.3 + _controller.value;
     return Listener(
       onPointerHover: (PointerHoverEvent event) {
         _controller.reverse();
@@ -63,7 +63,7 @@ class _HMFloatingActionButtonState extends State<HMFloatingActionButton>
             scale: _scale,
             child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: Color.fromARGB(255, 10, 89, 247),
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                   boxShadow: [
                     BoxShadow(

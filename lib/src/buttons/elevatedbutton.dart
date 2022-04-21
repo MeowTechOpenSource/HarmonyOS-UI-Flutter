@@ -23,8 +23,6 @@ class HMElevatedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: width,
-      height: height,
       child: Material(
         textStyle: TextStyle(
             color: textColor,
@@ -35,7 +33,10 @@ class HMElevatedButton extends StatelessWidget {
         child: InkWell(
           onTap: () => onPressed(),
           splashColor: Color.fromARGB(0, 255, 94, 94),
-          child: center ? Center(child: child,) : child,
+          child: Padding(
+            padding: const EdgeInsets.all(13.0),
+            child: center ? Center(child: child,) : child,
+          ),
           borderRadius: BorderRadius.circular(borderRadius),
         ),
       ),
